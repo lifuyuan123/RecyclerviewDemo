@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_margin="5dp"
+    android:background="@android:color/holo_blue_bright"
+    android:orientation="horizontal"
+    >
+    <azsecuer.zhuoxin.com.recyclerviewdemo.MyScrollview
+        android:id="@+id/scroll"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+            android:id="@+id/layout_content"
+            android:layout_width="420dp"
+            android:layout_height="match_parent">
+            <TextView
+            android:id="@+id/text"
+            android:gravity="center"
+            android:text="text"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:textSize="18dp"
+            android:textColor="#DD000000"
+            />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_bianji"
+                android:layout_height="match_parent"
+                android:layout_width="50dp"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/layout_content"
+                android:text="编 辑"
+                />
+            <View
+                android:layout_width="2dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="#DD000000"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:id="@+id/tv_delete"
+                android:layout_height="match_parent"
+                android:layout_width="50dp"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/layout_content"
+                android:text="删 除"
+                />
+        </LinearLayout>
+    </azsecuer.zhuoxin.com.recyclerviewdemo.MyScrollview>
+</LinearLayout>
